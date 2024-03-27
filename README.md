@@ -2,15 +2,21 @@
 ML models and shallow NN for binary classification of VR controller data
 
 Data*
-The data in raw form, and pre-processed for data structure and readability. The two scripts move the class column to the start of the document, and add headers to the csv columns, respectively.
+
+The data in raw form, and pre-processed for data structure and readability. There are 1000 entries of shots from 3 users with their right hand, trying to hit a ball coming to them at a semi-random point in the X axis. The data being recorded are: cameraX= the random X point, position of the racket in every frame on the x/y/z axes seperately, rotation of the racket in every frame on the x/y/z axes seperately, and the class= 0/1 if the ball hit the racket or not.
+
+The two scripts move the class column to the start of the document, and add headers to the csv columns, respectively.
 
 Training*
+
 In allValidations.py, the classifier RandomForest is used, and is checked with 3 validation methods.
 In keras1.py, a shallow neural network is made using Keras TensorFlow libraries and is checked with 2 validation methods. Optionally the model is converted to .onnx format for the later use.
 The LOO method is very expensive and is being commented out/ommited.
 
 Environment*
+
 The project was developed in a miniconda environment with a variety of libraries. The exact dependencies are not gathered somewhere for the python scripts, install as needed.
 
 Unity*
+
 Uploaded the necessary files to reproduce the project. Unity LTS edition 2022.3.9f1
