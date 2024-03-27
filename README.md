@@ -8,3 +8,9 @@ Training*
 In allValidations.py, the classifier RandomForest is used, and is checked with 3 validation methods.
 In keras1.py, a shallow neural network is made using Keras TensorFlow libraries and is checked with 2 validation methods. Optionally the model is converted to .onnx format for the later use.
 The LOO method is very expensive and is being commented out/ommited.
+
+Environment*
+The project was developed in a miniconda environment with a variety of libraries. The exact dependencies are not gathered somewhere for the python scripts, install as needed.
+
+Unity*
+Uploaded the necessary files to reproduce the project. Unity LTS edition 2022.3.9f1
